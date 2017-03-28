@@ -75,7 +75,7 @@ public class ConferenceVisitor {
         return registeredOn;
     }
 
-    @JsonDeserialize(using=LocalDateDeserializer.class)
+    @JsonDeserialize(using= LocalDateDeserializer.class)
     public void setRegisteredOn(LocalDate registeredOn) {
         this.registeredOn = registeredOn;
     }

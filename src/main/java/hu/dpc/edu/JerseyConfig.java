@@ -15,5 +15,7 @@ public class JerseyConfig
 
     public JerseyConfig() {
         register(MessageResource.class);
+        register(ConferenceVisitorsResource.class);
+        register(EntityNotFoundExceptionMapper.class);
     }
 }

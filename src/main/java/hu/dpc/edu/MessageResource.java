@@ -12,8 +12,19 @@ import java.time.LocalDate;
 @RestResource
 @Path("message")
 public class MessageResource {
+
+    private String message;
+
+    @GET
+    @Produces("text/plain")
     public String getMessage() {
-        return "Test";
+        return message;
+    }
+
+    @PUT
+    @Consumes("text/plain")
+    public void setMessage(String message) {
+        this.message = message;
     }
 
 }
